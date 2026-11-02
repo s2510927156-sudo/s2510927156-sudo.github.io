@@ -1,4 +1,361 @@
-  <!DOCTYPE html>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic portfolio of Borkotullah, undergraduate student at University of Rajshahi.">
+<title>Borkotullah | Academic Portfolio</title>
+
+<style>
+:root {
+  --navy:#10213d;
+  --gold:#c6a66b;
+  --bg:#f5f7fa;
+  --card:#ffffff;
+  --text:#172337;
+  --muted:#68758a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1100px;margin:auto}
+header{
+  background:var(--navy);
+  color:white;
+  position:sticky;top:0;z-index:10;
+}
+nav{
+  min-height:70px;
+  display:flex;align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+.logo{font-size:23px;font-weight:bold}
+.logo span{color:var(--gold)}
+nav ul{display:flex;list-style:none;gap:20px;flex-wrap:wrap}
+nav a:hover{color:var(--gold)}
+.hero{
+  background:linear-gradient(120deg,#10213d,#233e62);
+  color:white;padding:100px 0;
+}
+.hero-content{max-width:750px}
+.hero h1{font-size:clamp(38px,6vw,65px);line-height:1.2}
+.hero h1 span{color:var(--gold)}
+.hero h2{font-size:22px;margin:15px 0;color:#d9e1ed}
+.hero p{color:#d0d9e6;margin:20px 0}
+.btn{
+  display:inline-block;padding:12px 22px;
+  background:var(--gold);color:#14213a;
+  border-radius:30px;font-weight:bold;margin:8px 5px 0 0;
+}
+.btn-outline{
+  border:1px solid white;background:transparent;color:white;
+}
+section{padding:75px 0}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font-size:34px;color:var(--navy)}
+.section-title p{color:var(--muted)}
+.about-grid,.contact-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:25px;
+}
+.card{
+  background:var(--card);padding:25px;
+  border-radius:14px;margin-bottom:18px;
+  box-shadow:0 5px 22px rgba(0,0,0,.05);
+  border:1px solid #e8edf3;
+}
+.card h3{color:var(--navy);margin-bottom:10px}
+.card p{color:var(--muted)}
+.grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.tag{
+  display:inline-block;background:#edf0f5;
+  color:#253b5b;padding:5px 12px;
+  border-radius:20px;margin:5px;font-size:13px;
+}
+.project{border-left:5px solid var(--gold)}
+.status{
+  color:#856525;background:#f7eedb;
+  padding:5px 12px;border-radius:20px;
+  display:inline-block;margin-bottom:15px;
+  font-size:13px;font-weight:bold;
+}
+.timeline{border-left:3px solid var(--gold);padding-left:22px}
+.timeline .card{position:relative}
+.timeline .card:before{
+  content:"";position:absolute;left:-31px;top:25px;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--gold);
+}
+footer{
+  background:var(--navy);color:white;
+  padding:30px;text-align:center;
+}
+footer a{color:var(--gold)}
+@media(max-width:750px){
+  nav{padding:15px 0;align-items:flex-start;flex-direction:column}
+  nav ul{gap:10px;font-size:13px}
+  .about-grid,.contact-grid,.grid{grid-template-columns:1fr}
+  .hero{padding:70px 0}
+  section{padding:55px 0}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+  <a href="#home" class="logo">BORKOT<span>.</span></a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+<div class="container hero-content">
+  <p>ACADEMIC PORTFOLIO | RAJSHAHI, BANGLADESH</p>
+  <h1>Borkotullah <span>(Borkot)</span></h1>
+  <h2>Undergraduate Student & Researcher in Training</h2>
+  <p>
+    Undergraduate student in Population Science and Human Resources
+    Development at the University of Rajshahi. Interested in
+    demography, population dynamics, statistical modelling,
+    public health and human resource development.
+  </p>
+  <a class="btn" href="assets/cv.pdf" download>Download CV</a>
+  <a class="btn btn-outline" href="#research">Explore Research</a>
+  <a class="btn btn-outline"
+     href="https://www.linkedin.com/in/borkotullah-4590473a1"
+     target="_blank" rel="noopener">LinkedIn ↗</a>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-title">
+  <h2>About Me</h2>
+  <p>My academic journey and interests</p>
+</div>
+<div class="about-grid">
+<div class="card">
+<h3>Academic Profile</h3>
+<p>
+I am an undergraduate student of Population Science and Human
+Resources Development at the University of Rajshahi, Bangladesh.
+My academic interests include demographic estimation, population
+dynamics, applied statistics and the relationship between
+environmental change and human development.
+</p>
+</div>
+<div class="card">
+<h3>Academic Information</h3>
+<p><b>Institution:</b> University of Rajshahi</p>
+<p><b>Department:</b> Population Science and Human Resources Development</p>
+<p><b>Degree:</b> Bachelor of Science (B.Sc.)</p>
+<p><b>Session:</b> 2024–2025</p>
+<p><b>Location:</b> Rajshahi, Bangladesh</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="research">
+<div class="container">
+<div class="section-title">
+<h2>Research Interests</h2>
+<p>Areas of academic exploration</p>
+</div>
+<div class="grid">
+<div class="card"><h3>Population Studies</h3><p>Demography, population dynamics and demographic analysis.</p></div>
+<div class="card"><h3>Demographic Estimation</h3><p>TFR, NRR, PPR, Lexis diagrams and age-data smoothing.</p></div>
+<div class="card"><h3>Public Health</h3><p>Population health and demographic perspectives.</p></div>
+<div class="card"><h3>Climate Displacement</h3><p>Climate-related displacement and human capital in Bangladesh.</p></div>
+<div class="card"><h3>Industry 4.0</h3><p>Skill gaps and human resource development.</p></div>
+<div class="card"><h3>Applied Mathematics</h3><p>Probability, calculus, linear algebra and applied economics.</p></div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<div class="section-title">
+<h2>Research & Projects</h2>
+<p>My developing research work</p>
+</div>
+<div class="card project">
+<span class="status">Proposal Stage / Ongoing Research</span>
+<h3>Uncharted Demographics: Assessing the Impact of Industry 4.0 Skill-Gaps and Climate Displacement on Human Resource Development in Bangladesh</h3>
+<p><b>Role:</b> Student Researcher / Principal Investigator</p>
+<p><b>Theme:</b> Demography, climate displacement, Industry 4.0 and HRD.</p>
+<p><b>Status:</b> Proposal stage / ongoing research. Not a published study.</p>
+</div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+<div class="section-title">
+<h2>Education</h2>
+</div>
+<div class="card">
+<h3>Bachelor of Science (B.Sc.)</h3>
+<p><b>Subject:</b> Population Science and Human Resources Development</p>
+<p><b>Institution:</b> University of Rajshahi, Bangladesh</p>
+<p><b>Session:</b> 2024–2025</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<div class="section-title">
+<h2>Technical Skills</h2>
+<p>Software, programming and academic foundations</p>
+</div>
+<div class="grid">
+<div class="card">
+<h3>Statistical Software</h3>
+<span class="tag">SPSS</span><span class="tag">MATLAB</span>
+</div>
+<div class="card">
+<h3>Programming</h3>
+<span class="tag">C</span><span class="tag">C++</span>
+<p>Basic syntax and logic execution.</p>
+</div>
+<div class="card">
+<h3>Office & Data</h3>
+<span class="tag">Excel</span><span class="tag">Word</span><span class="tag">Data Entry</span>
+</div>
+<div class="card">
+<h3>Mathematics</h3>
+<p>Probability, differential calculus, linear algebra and set theory.</p>
+</div>
+<div class="card">
+<h3>Language</h3>
+<p>Bengali and English practice, phonetics, IPA sounds and IELTS speaking preparation.</p>
+</div>
+<div class="card">
+<h3>Research</h3>
+<p>Research training and demographic methods.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="training">
+<div class="container">
+<div class="section-title">
+<h2>Training & Certifications</h2>
+</div>
+<div class="timeline">
+<div class="card"><h3>5-Day Hands-on Research Training Program</h3><p>Rajshahi University Higher Education and Research Forum (RUHERF).</p></div>
+<div class="card"><h3>SPSS Training and MATLAB Computation</h3></div>
+<div class="card"><h3>IELTS Preparation & English Phonetics Training</h3></div>
+<div class="card"><h3>Basic Data Entry Online Live Course</h3><p>Progati IT.</p></div>
+<div class="card"><h3>Microsoft Word Basics</h3><p>10 Minute School / MuktoPaath (a2i).</p></div>
+<div class="card"><h3>Art of Job Searching and Applications</h3><p>Hubrihi.</p></div>
+<div class="card"><h3>Digital Security Essentials and Cyber Security V1</h3><p>ICT Division / BHOOT.</p></div>
+<div class="card"><h3>Adolescent Nutrition Program and COVID-19 Awareness</h3><p>UNICEF / BRAC / MuktoPaath.</p></div>
+</div>
+</div>
+</section>
+
+<section id="activities">
+<div class="container">
+<div class="section-title">
+<h2>Leadership & Extracurricular Activities</h2>
+</div>
+<div class="grid">
+<div class="card">
+<h3>Joint Cultural Secretary</h3>
+<p>Rajshahi University English Spoken Club (RUESC).</p>
+</div>
+<div class="card">
+<h3>Navy Cadet</h3>
+<p>Bangladesh National Cadet Corps (BNCC), Naval Wing.</p>
+</div>
+<div class="card">
+<h3>Sports Secretary</h3>
+<p>District Student Association (MESDA).</p>
+</div>
+<div class="card">
+<h3>Rover Scout / Active Volunteer</h3>
+<p>Rajshahi University Rover Scout Group.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="achievements">
+<div class="container">
+<div class="section-title">
+<h2>Achievements & Events</h2>
+</div>
+<div class="timeline">
+<div class="card"><h3>Volunteer Recognition</h3><p>Rajshahi University Debating Forum (RUDF).</p></div>
+<div class="card"><h3>International Career Summit 2026</h3><p>Participant, Rajshahi University Readers' Forum.</p></div>
+<div class="card"><h3>International Education Expo 2026</h3><p>Delegate, RUCSU.</p></div>
+<div class="card"><h3>RUHERF Summit 2026</h3><p>Active Participant: Shaping the Future: Research & Global Education.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-title">
+<h2>Contact Me</h2>
+<p>Academic networking and professional communication</p>
+</div>
+<div class="contact-grid">
+<div class="card">
+<h3>Contact Information</h3>
+<p><b>Email:</b> 2510927156@ru.ac.bd</p>
+<p><b>Location:</b> Rajshahi, Bangladesh</p>
+<p><b>LinkedIn:</b></p>
+<a class="btn" href="https://www.linkedin.com/in/borkotullah-4590473a1" target="_blank" rel="noopener">Connect on LinkedIn</a>
+</div>
+<div class="card">
+<h3>Send an Email</h3>
+<p>For academic or professional communication:</p>
+<a class="btn" href="mailto:2510927156@ru.ac.bd">Email Me</a>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© <span id="year"></span> Borkotullah (Borkot) | Academic Portfolio</p>
+<p>University of Rajshahi, Bangladesh</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+  </html>
+                                                                <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
